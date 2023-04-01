@@ -1,0 +1,32 @@
+{
+  "name": "otel-webapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/my-element.es.js",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "lit": "^2.7.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.37.0",
+    "@opentelemetry/instrumentation": "^0.37.0",
+    "@opentelemetry/instrumentation-fetch": "^0.37.0",
+    "@opentelemetry/resources": "^1.11.0",
+    "@opentelemetry/sdk-trace-web": "^1.11.0",
+    "@opentelemetry/semantic-conventions": "^1.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.2.1"
+  }
+}
